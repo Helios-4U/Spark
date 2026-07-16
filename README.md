@@ -11,8 +11,7 @@ single Colab T4 free-tier GPU.
 
 ## Model weights (Hugging Face)
 
-> **TODO:** fill in the live Hugging Face model page URL once published.
-> Placeholder: https://huggingface.co/Helios-4U/spark-qwen3.5-0.8b
+> Live model page: https://huggingface.co/Helios4U/spark-qwen3.5-0.8b
 
 The model weights live on Hugging Face (not in this git repo — see
 `.gitignore`). This repository contains the **training code and pipeline** only.
@@ -20,7 +19,7 @@ The model weights live on Hugging Face (not in this git repo — see
 ## Quickstart
 
 ```bash
-git clone https://github.com/Helios-4U/Spark.git
+git clone https://github.com/Helios4U/Spark.git
 cd Spark
 uv pip install -r requirements.txt
 python train_spark.py
