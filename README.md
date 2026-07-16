@@ -1,3 +1,5 @@
+![Helios](https://raw.githubusercontent.com/Shishir-Kc/Assets/refs/heads/main/Helios/helios.png)
+
 # Spark
 
 **Spark** is a small, low-latency conversational language model — a LoRA
