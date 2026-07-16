@@ -1,0 +1,23 @@
+# Spark — training requirements
+#
+# NOTE ON transformers:
+#   At the time of training (Colab, T4), the PyPI release of `transformers` was
+#   MISSING `remap_legacy_layer_types`, which Qwen3.5 needs for legacy layer
+#   mapping. We therefore trained with a git-source install:
+#
+#       pip install -U "git+https://github.com/huggingface/transformers.git"
+#
+#   That bug has since been fixed upstream. The pinned `transformers==5.13.1`
+#   below already contains the fix, so a normal `pip install` works now. If you
+#   are reproducing the original run on an older environment, use the git install
+#   command above instead of the pinned version.
+
+torch==2.13.0
+transformers==5.13.1
+peft==0.19.1
+trl==1.8.0
+datasets==5.0.0
+accelerate==1.14.0
+huggingface_hub==1.23.0
+safetensors==0.8.0
+bitsandbytes==0.45.0
